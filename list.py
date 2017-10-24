@@ -6,7 +6,8 @@
 # Если наибольших элементов несколько,
 # выведите индекс первого из них.
 
-list = input('Введите список чисел: ').split(',')
-num_max = max(list)
+lst = input('Введите список чисел: ').split(',')
+lst = list(map(int, lst))
+num_max = max(lst)
 print(num_max)
-print(list.index(num_max))
+print(lst.index(num_max))
